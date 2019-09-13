@@ -48,32 +48,50 @@
 //   console.log(counter);
 // };
 
+// const findBiggest = (array) => {
+//
+//   // Vinicio - THIS CODE IS ASSUMING THERE ARE NO DUPLICATED VALUES.
+//   if(array.length < 2) {
+//     return null;
+//   } // Vinicio - this creates an invariant
+//   // Vinicio - for your HW, this won't be as easy as what we have here
+//   let biggestValue = Math.max(array[0], array[1]);
+//   // let biggestValue = array[0] > array[1] ? array[0] : array[1];
+//   //
+//   // if(array[0] > array[1])
+//   //   biggestValue = array[0];
+//   // else
+//   //   biggestValue = array[1];
+//
+//   let secondBiggest = Math.min(array[0], array[1]);
+//
+//   for(let i = 2; i < array.length; i++) { // O(n)
+//     if(array[i] > biggestValue){
+//       secondBiggest = biggestValue;
+//       biggestValue = array[i];
+//     } else if(array[i] > secondBiggest) {
+//       secondBiggest = array[i];
+//     }
+//   }
+//   console.log(secondBiggest);
+// };
+
 const findBiggest = (array) => {
 
-  // Vinicio - THIS CODE IS ASSUMING THERE ARE NO DUPLICATED VALUES.
-  if(array.length < 2) {
+  if(array.length < 2) { // Worst case : O(n), but we are going to assume O(1)
     return null;
-  } // Vinicio - this creates an invariant
-  // Vinicio - for your HW, this won't be as easy as what we have here
-  let biggestValue = Math.max(array[0], array[1]);
-  // let biggestValue = array[0] > array[1] ? array[0] : array[1];
-  //
-  // if(array[0] > array[1])
-  //   biggestValue = array[0];
-  // else
-  //   biggestValue = array[1];
+  }
+  let biggestValue = Math.max(array[0], array[1]); // O(1)
+  let secondBiggest = Math.min(array[0], array[1]); // O(1)
 
-  let secondBiggest = Math.min(array[0], array[1]);
-
-  for(let i = 2; i < array.length; i++) { // O(n)
-    if(array[i] > biggestValue){
-      secondBiggest = biggestValue;
-      biggestValue = array[i];
-    } else if(array[i] > secondBiggest) {
-      secondBiggest = array[i];
+  for(let i = 2; i < array.length; i++) { // O(n - 2) = O(n)
+    if(array[i] > biggestValue){ // O(1)
+      secondBiggest = biggestValue; // O(1)
+      biggestValue = array[i]; // O(1)
+    } else if(array[i] > secondBiggest) { // O(1)
+      secondBiggest = array[i]; // O(1)
     }
   }
-  console.log(secondBiggest);
 };
 
 findBiggest([1000,5,7,6]);
