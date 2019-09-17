@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d4aa744-69e8-439f-9674-3b6c3823fc0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/findBiggest.js" beforeDir="false" afterPath="$PROJECT_DIR$/findBiggest.js" afterDir="false" />
-    </list>
+    <list default="true" id="6d4aa744-69e8-439f-9674-3b6c3823fc0a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -43,6 +41,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1364" />
+    <option name="y" value="-67" />
     <option name="width" value="1280" />
     <option name="height" value="759" />
   </component>
@@ -114,15 +114,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568338716003</updated>
-      <workItem from="1568338719520" duration="4679000" />
+      <workItem from="1568338719520" duration="4992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4679000" />
+    <option name="totallyTimeSpent" value="4992000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="759" extended-state="6" />
+    <frame x="1364" y="-67" width="1280" height="759" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="DB Browser" weight="0.32960597" />
