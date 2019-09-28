@@ -61,3 +61,25 @@ countNodes(four);
 console.log(count);
 
 
+'use strict';
+
+const traverseAndCountEvenValues = (arr, index) => {
+  if (index === arr.length - 1) {
+    if (arr[index] % 2 === 0) {
+      return 1;
+    }
+
+    return 0;
+  }
+
+  if (arr[index] % 2 === 0) {
+    return traverseAndCountEvenValues(arr, index + 1) + 1;
+  }
+
+  return traverseAndCountEvenValues(arr, index + 1);
+};
+
+ console.log(traverseAndCountEvenValues([1,2,3,4,5,6], 0));
+
+
+
